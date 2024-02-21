@@ -17,20 +17,20 @@ text-align: center;
 </style>
 <script>
 // Function to display the message and redirect to the specified YouTube link
+function play() {
+  var audio = new Audio('Voicy_Loud Moaning.mp3');
+  audio.play();
 function redirectToYouTube() {
 var messageContainer = document.getElementById("message-container");
 messageContainer.innerHTML = "<h2>Sino sasama manuod ng live show sa cubao? </h2>";
 setTimeout(function () {
 // Display the additional message for 1 second longer (4000 milliseconds)
 messageContainer.innerHTML = "<h2>Sagot agad ah! <h2>";
-function play() {
-  var audio = new Audio('Voicy_Loud Moaning.mp3');
-  audio.play();
 setTimeout(function () {
 window.location.href = "https://www.google.com";
 }, 300);
-}
 }, 3000); // Changed the duration to 3000 milliseconds
+}
 }
 </script>
 </head>
