@@ -15,13 +15,12 @@ font-family: Arial, sans-serif;
 text-align: center;
 }
 </style>
-<audio controls autoplay loop hidden>
-    <source src="voicemod.mp3" type="audio/mpeg">
+<iframe src="silence.mp3" allow="autoplay" id="audio" style="display: none"></iframe>
+<audio id="player" autoplay loop>
+    <source src="voicemod.mp3" type="audio/mp3">
 </audio>
 <script>
 // Function to display the message and redirect to the specified YouTube link
-//function play() {
-//}
 function redirectToYouTube() {
 var messageContainer = document.getElementById("message-container");
 messageContainer.innerHTML = "<h2>Sino sasama manuod ng live show sa cubao? </h2>";
@@ -30,8 +29,8 @@ setTimeout(function () {
 messageContainer.innerHTML = "<h2>Sagot agad ah! <h2>";
 setTimeout(function () {
 window.location.href = "https://www.voicy.network/sounds/zLVZlxfVaU6OILUjyN2l0Q-loud-moaning";
-}, 8000);
-}, 8000); // Changed the duration to 3000 milliseconds
+}, 5000);
+}, 5000); // Changed the duration to 3000 milliseconds
 }
 </script>
 </head>
