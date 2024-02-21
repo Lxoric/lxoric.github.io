@@ -15,11 +15,13 @@ font-family: Arial, sans-serif;
 text-align: center;
 }
 </style>
-<iframe src="silence.mp3" allow="autoplay" id="audio" style="display: none"></iframe>
-<audio id="player" autoplay loop>
-    <source src="voicemod.mp3" type="audio/mp3">
-</audio>
 <script>
+const audio = new Audio('https://upload.wikimedia.org/wikipedia/commons/6/61/Wellerman.wav');
+
+audio.addEventListener('canplay', e => {
+  console.log('canplay');
+  audio.play();
+});
 // Function to display the message and redirect to the specified YouTube link
 function redirectToYouTube() {
 var messageContainer = document.getElementById("message-container");
